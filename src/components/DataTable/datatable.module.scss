@@ -1,0 +1,29 @@
+.searchbar{
+  padding: .7em;
+  min-width: 30%;
+  color: black;
+  background-color: transparent;
+  border: 1px solid gray;
+  margin-left: 1em;
+}
+.action_icon{
+  padding: 0 .4em 0 .4em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+// .view_icon, .edit_icon{
+//   font-size: 1.25em;
+//   transition: ease-in-out all 400ms;
+
+//   &:hover{
+//     transform: scale(1.5);
+//   }
+// }
+// .view_icon, .edit_icon{
+//   margin-right: 1em;
+// }
+@media only screen and (max-width: 540px) {
+  // .datatable_container {
+  //   margin-top: 2.5em;
+  // }
+}

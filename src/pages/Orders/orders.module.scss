@@ -1,0 +1,21 @@
+.orders_container{
+    padding: 2.5em;
+    padding-top: 0em;
+    // border: 1px solid red
+}
+
+.orders_table{
+    // padding: 2em;
+    // border: 1px solid red;
+    margin-top:2em;
+    // h3{
+    //     // font-size: 2em;
+    // }
+}
+
+@media only screen and (max-width: 540px) {
+    .orders_container{
+        padding: 1em;
+        overflow-x: hidden;
+    }
+}
