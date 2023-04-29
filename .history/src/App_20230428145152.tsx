@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       
       {/* Protected routes */}
       <Route element={<PrivateOutlet />}>
-      <Route path="/dashboard" element={<DashboardLayout />}>
+      <Route path="dashboard" element={<DashboardLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="products">
           <Route index element={<Products />} />
