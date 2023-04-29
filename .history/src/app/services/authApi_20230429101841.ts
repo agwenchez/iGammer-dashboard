@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // import { LoginRequest, LoginResponse, AuthUser, SignupResponse, SignupRequest } from "../../@types";
 import { RootState } from '../rootReducer';
 import { LoginRequest, LoginResponse, SignupRequest, SignupResponse } from '../../@types';
-const BASE_URL = "http://localhost:8080"
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const authApi = createApi({
   reducerPath:'authApi',
@@ -20,7 +20,7 @@ export const authApi = createApi({
   endpoints: (builder) => ({
     login: builder.mutation<LoginResponse, LoginRequest>({
       query: (credentials) => ({
-        url: 'auth/login',
+        url: 'auth/signin',
         method: 'POST',
         body: credentials,
       }),

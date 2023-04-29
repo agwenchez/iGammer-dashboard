@@ -1,7 +1,7 @@
 export interface User {
   firstName: string;
   lastName: string;
-  username: string;
+  email: string;
 }
 
 export interface AuthState {
@@ -10,7 +10,7 @@ export interface AuthState {
 }
 
 export interface LoginRequest {
-  username: string;
+  email: string;
   password: string;
 }
 
@@ -24,7 +24,7 @@ export interface SignupResponse extends LoginResponse {}
 export interface SignupRequest extends User {}
 
 export interface LoginDto {
-  username: string;
+  email: string;
   password: string;
 }
 //   export interface AuthState {

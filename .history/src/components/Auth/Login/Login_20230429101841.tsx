@@ -15,7 +15,7 @@ const Login = () => {
   const dispatch = useAppDispatch();
   const [login, { isLoading }] = useLoginMutation();
   const [formData, setFormData] = useState<LoginDto>({
-    username: "",
+    email: "",
     password: "",
   });
   const [togglePassword, setTogglePassword] = useState(false);
@@ -45,7 +45,7 @@ const Login = () => {
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    setFormData({ ...formData, username: value });
+    setFormData({ ...formData, email: value });
   };
 
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -62,20 +62,20 @@ const Login = () => {
   return (
     <>
       <form className={styles.login_form} onSubmit={onSubmitHandler}>
-        <h2>iGammer Dashboard</h2>
+        <h2>CELEBRITY BRANDS</h2>
         <p>Welcome back !!!</p>
         {/* <h2>SIGN IN</h2> */}
         <div className={styles.input_group}>
-          <label htmlFor="email">Username</label>
+          <label htmlFor="email">Email</label>
           <input
-            type="text"
-            name="username"
+            type="email"
+            name="email"
             id="email"
             required
             // aria-invalid
-            placeholder="Enter your username"
+            placeholder="Enter your email"
             onChange={handleEmailChange}
-            value={formData.username}
+            value={formData.email}
             autoFocus
             autoComplete="off"
           />

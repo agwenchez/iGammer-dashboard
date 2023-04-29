@@ -10,7 +10,7 @@ export interface AuthState {
 }
 
 export interface LoginRequest {
-  username: string;
+  email: string;
   password: string;
 }
 

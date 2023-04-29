@@ -38,7 +38,7 @@ const Login = () => {
     } catch (error) {
       // @ts-ignore
       const { data } = error;
-      console.log("Error occured", data.message);
+      // console.log("Error occured", data.message);
       error && toast.error(`${data.message}`);
     }
   };
