@@ -27,14 +27,9 @@ const Login = () => {
     try {
       const response = await login(formData).unwrap();
       console.log("User", response)
-      const { data , status } = response;
-      if (status && data) {
-        console.log("role", data.role)
-        // if(data.role === "user"){
-        //   toast.error("Not authorized for users")
-        //   return
-        // }
-        dispatch(setCredentials({ data }));
+      const { user, access_token } = response;
+      if (user && access_token) {
+        dispatch(setCredentials({ user, access_token }));
         toast.success("You have logged in successfully");
         navigate("/dashboard", { replace: true });
         // setTimeout(() => {

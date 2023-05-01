@@ -24,7 +24,6 @@ export interface LoginResponse {
   data: User | null;
   message: string | null;
   error: string | null;
-  status: number
 }
 
 export interface SignupResponse extends LoginResponse {}

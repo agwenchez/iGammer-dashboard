@@ -51,7 +51,7 @@ const DashboardLayout = () => {
                 open ? { transform: "scale(1)" } : { transform: "scale(0)" }
               }
             >
-              iGammer Dashboard
+              CELEBRITY BRANDS
             </p>
           </div>
           <ul className={styles.menu}>
@@ -61,10 +61,10 @@ const DashboardLayout = () => {
                 <span hidden={open ? false : true}> {menu.title}</span>
               </Link>
             ))}
-            <div className={styles.logout_container}>
+            {/* <div className={styles.logout_container}>
               <MdLogout className={styles.logout_icon} />
               <h3 hidden={open ? false : true}>Logout</h3>
-            </div>
+            </div> */}
           </ul>
         </section>
         <section className={styles.main_content_container}>

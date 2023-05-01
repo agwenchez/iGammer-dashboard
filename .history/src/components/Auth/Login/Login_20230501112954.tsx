@@ -29,11 +29,7 @@ const Login = () => {
       console.log("User", response)
       const { data , status } = response;
       if (status && data) {
-        console.log("role", data.role)
-        // if(data.role === "user"){
-        //   toast.error("Not authorized for users")
-        //   return
-        // }
+        if
         dispatch(setCredentials({ data }));
         toast.success("You have logged in successfully");
         navigate("/dashboard", { replace: true });

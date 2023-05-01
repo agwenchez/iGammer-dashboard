@@ -21,10 +21,9 @@ export interface LoginRequest {
 }
 
 export interface LoginResponse {
-  data: User | null;
-  message: string | null;
-  error: string | null;
-  status: number
+  user: User | null;
+  access_token: string | null;
+  refresh_token: string | null;
 }
 
 export interface SignupResponse extends LoginResponse {}

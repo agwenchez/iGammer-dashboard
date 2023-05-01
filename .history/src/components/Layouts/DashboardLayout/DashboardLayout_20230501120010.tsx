@@ -60,11 +60,11 @@ const DashboardLayout = () => {
                 <menu.icon className={styles.menu_icon} />
                 <span hidden={open ? false : true}> {menu.title}</span>
               </Link>
-            ))}
-            <div className={styles.logout_container}>
-              <MdLogout className={styles.logout_icon} />
-              <h3 hidden={open ? false : true}>Logout</h3>
-            </div>
+            // ))}
+            // {/* <div className={styles.logout_container}>
+            //   <MdLogout className={styles.logout_icon} />
+            //   <h3 hidden={open ? false : true}>Logout</h3>
+            // </div> */}
           </ul>
         </section>
         <section className={styles.main_content_container}>

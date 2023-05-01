@@ -23,8 +23,7 @@ export interface LoginRequest {
 export interface LoginResponse {
   data: User | null;
   message: string | null;
-  error: string | null;
-  status: number
+  error: bole | null;
 }
 
 export interface SignupResponse extends LoginResponse {}
