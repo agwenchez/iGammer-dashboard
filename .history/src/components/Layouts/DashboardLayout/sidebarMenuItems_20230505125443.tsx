@@ -19,12 +19,6 @@ export const sidebarMenuItems = [
     path: "/dashboard/customers",
     gap: true,
   },
-  {
-    title: "Transactions",
-    icon: BiTransferAlt,
-    path: "/dashboard/transactions",
-    gap: true,
-  },
   // { title: "Tags", icon: FaTags, path: "/dashboard/offers" },
   // { title: "Categories", icon: TiThListOutline, path: "/dashboard/offers" },
   // { title: "Hot Offers", icon: FaTag, path: "/dashboard/offers" },

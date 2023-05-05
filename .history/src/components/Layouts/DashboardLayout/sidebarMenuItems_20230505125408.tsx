@@ -14,15 +14,15 @@ export const sidebarMenuItems = [
   { title: "Games", icon: IoGameController, path: "/dashboard/products" },
   { title: "Approved Game", icon: BsCheck2All, path: "/dashboard/orders" },
   {
-    title: "Users",
-    icon: HiUsers,
-    path: "/dashboard/customers",
-    gap: true,
-  },
-  {
     title: "Transactions",
     icon: BiTransferAlt,
     path: "/dashboard/transactions",
+    gap: true,
+  },
+  {
+    title: "Users",
+    icon: HiUsers,
+    path: "/dashboard/customers",
     gap: true,
   },
   // { title: "Tags", icon: FaTags, path: "/dashboard/offers" },

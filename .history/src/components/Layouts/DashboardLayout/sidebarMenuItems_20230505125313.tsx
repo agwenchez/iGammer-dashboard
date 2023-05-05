@@ -4,25 +4,25 @@ import { BiTransferAlt } from "react-icons/bi";
 
 import { AiFillHome } from "react-icons/ai";
 
-import { IoGameController} from "react-icons/io5";
+import { GrTransaction,GrGamepad } from "react-icons/gr";
 // import { GrGamepad } from "react-icons/tb";
 import { HiUsers } from "react-icons/hi";
 import { BsCheck2All } from "react-icons/bs";
 
 export const sidebarMenuItems = [
   { title: "Dashboard", icon: AiFillHome, path: "/dashboard" },
-  { title: "Games", icon: IoGameController, path: "/dashboard/products" },
+  { title: "Games", icon: GrGamepad, path: "/dashboard/products" },
   { title: "Approved Game", icon: BsCheck2All, path: "/dashboard/orders" },
-  {
-    title: "Users",
-    icon: HiUsers,
-    path: "/dashboard/customers",
-    gap: true,
-  },
   {
     title: "Transactions",
     icon: BiTransferAlt,
     path: "/dashboard/transactions",
+    gap: true,
+  },
+  {
+    title: "Users",
+    icon: HiUsers,
+    path: "/dashboard/customers",
     gap: true,
   },
   // { title: "Tags", icon: FaTags, path: "/dashboard/offers" },
